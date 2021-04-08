@@ -1,0 +1,24 @@
+{
+  "name": "pic-viewer.js",
+  "version": "1.0.0",
+  "description": "A simple image viewer for html page",
+  "main": "index.js",
+  "author": "tonywho",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "webpack serve --config ./configs/webpack.config.dev.js",
+    "build": "webpack --config ./configs/webpack.config.prod.js"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "style-loader": "^2.0.0",
+    "typescript": "^4.2.4",
+    "webpack": "^5.31.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
