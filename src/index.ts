@@ -271,7 +271,7 @@ export default class Viewer {
   }
   set currentIndex(v) {
     if (v < 0 || v >= this.images.length) {
-      throw new Error('index is out of range: [0, ' + (this.images.length - 1) + ']')
+      console.warn('index is out of range: [0, ' + (this.images.length - 1) + ']')
     }
     const lastIndex = this._currentIndex;
     this._currentIndex = v;
@@ -366,10 +366,12 @@ export default class Viewer {
       frg.appendChild(box);
     }
     if (this.previewBar) {
+      this.previewBar.innerHTML = '';
       this.previewBar.appendChild(previewFrg);
     }
     this.counter.innerText = this.currentIndex + 1 + '/' + images.length;
     this.images = images;
+    this.imgBox.innerHTML = '';
     this.imgBox.appendChild(frg);
   }
   _imgBoxFactory(img: HTMLImageElement) {

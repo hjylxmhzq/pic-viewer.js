@@ -1,8 +1,8 @@
 {
   "name": "pic-viewer.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple image viewer for html page",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "author": "tonywho",
   "license": "MIT",
   "private": false,
