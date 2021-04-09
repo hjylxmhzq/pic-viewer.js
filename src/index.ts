@@ -101,7 +101,7 @@ export default class Viewer {
     this.images = [];
     this._currentIndex = 0;
     this.el.innerHTML =
-      `<div style="position: relative; height: 100%; width: 100%; background-color: #ccc">
+      `<div style="position: relative; height: 100%; width: 100%; background-color: #2f2f2f">
     <div class="pic-viewer-imgbox"></div>
 </div>`;
     this.counter = document.createElement('div');
